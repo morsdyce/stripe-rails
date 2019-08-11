@@ -91,6 +91,9 @@ module Stripe
     callback 'transfer.updated'
     callback 'ping'
     callback 'stripe.event'
+    callback 'payment_intent.created'
+    callback 'payment_intent.succeeded'
+    callback 'payment_intent.payment_failed'
 
     # Deprecated
     callback 'transfer.failed' # https://stripe.com/docs/upgrades#2017-04-06
